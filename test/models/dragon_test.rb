@@ -69,7 +69,7 @@ class DragonTest < ActiveSupport::TestCase
     rider = nil
     dragon = nil
     rider = build(:rider, name: "Aegon")
-    dragon = build(:dragon, name:"Balerion")
+    dragon = build(:dragon, name:"Balerion", rider: rider)
     # Keeps expecting the rider_ID rather than the string when adding rider.
 
     # not allowed to change the assert statement!
